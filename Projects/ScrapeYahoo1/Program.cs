@@ -3,6 +3,7 @@ using System.Net;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -36,21 +37,19 @@ userPassword.SendKeys("Abby7777!");
 var loginButton2 = chromeDriver.FindElementById("login-signin");
 loginButton2.Click();
 
-chromeDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(300);
+chromeDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(120);
 
 chromeDriver.Navigate().GoToUrl("https://finance.yahoo.com/portfolio/p_1/view/v1");
 
 var popup = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("__dialog")));  
 
 var closePopup = chromeDriver.FindElementByXPath("//dialog[@id = '__dialog']/section/button");
-closePopup.Click();
+closePopup.Click(); 
 
 
-// var profileTable = chromeDriver.FindElementByXPath("//[@id='data-util-col']/section[2]/table"); 
+var profile = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("main")));
 
-// var profileTable = chromeDriver.FindElementByXPath("//*[@id=\'main\']/section/section[2]/div[2]").Text; 
-
-var profileTable = chromeDriver.FindElementByXPath("//[@id=\'main\']/section/section._64nqq/div.gIc8M/table").Text;
+var profileTable = chromeDriver.FindElement(By.XPath("//*[@id=\"main\"]/section/header/div/div[1]/div/div[2]/p[1]")).Text;
 
 System.Console.WriteLine("profileTable: ", profileTable);  
         }
