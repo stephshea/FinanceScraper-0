@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "fd775a49c9e0c46e33d452e5c0d682e3867a4589"
+    "signature": "88393aa1797f0fc06c426de7c33b7b76a2277624"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
       "FinanceScraper0/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
+          "Selenium.Firefox.WebDriver": "0.21.0",
           "Selenium.WebDriver": "3.12.1",
           "Selenium.WebDriver.ChromeDriver": "2.40.0"
         },
@@ -62,6 +63,7 @@
           }
         }
       },
+      "Selenium.Firefox.WebDriver/0.21.0": {},
       "Selenium.WebDriver/3.12.1": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3"
@@ -423,6 +425,13 @@
       "sha512": "sha512-hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
+    },
+    "Selenium.Firefox.WebDriver/0.21.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BktTpRQBLpAaNM51jJDOKn9AhK/fMSQJwR3mm5UOjJN9XPPZQK/AzojQat4/L9+L1c4aiWMchtljzUwL4WGK1Q==",
+      "path": "selenium.firefox.webdriver/0.21.0",
+      "hashPath": "selenium.firefox.webdriver.0.21.0.nupkg.sha512"
     },
     "Selenium.WebDriver/3.12.1": {
       "type": "package",
