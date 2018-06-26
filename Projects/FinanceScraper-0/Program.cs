@@ -1,12 +1,11 @@
-﻿
-
-using System;
+﻿using System;
 using System.Net;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
@@ -19,46 +18,37 @@ namespace FinanceScraper0
     {
         public static void Main(string[] args)
         {
-    //    FirefoxDriverService service = FirefoxDriverService.CreateDefaultService("/Users/Owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.1/");
+       FirefoxDriverService service = FirefoxDriverService.CreateDefaultService("/Users/Owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.1/");
 
-           var driver = new FirefoxDriver();
-        //    ("/Users/Owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.1/");
+    var driver = new FirefoxDriver();
+    var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
 
-            // var FirefoxDriver = new FirefoxDriver();
+driver.Url = "https://login.yahoo.com/config/login?.intl=us&.lang=en-US&.src=finance&.done=https%3A%2F%2Fßfinance.yahoo.com%2F";
 
-            // var wait = new WebDriverWait(FirefoxDriver, new TimeSpan(0, 0, 30));
-
-            driver.Url = "https://login.yahoo.com/config/login?.intl=us&.lang=en-US&.src=finance&.done=https%3A%2F%2Ffinance.yahoo.com%2F";
-
-             var userName = driver.FindElementById("login-username");
+            var userName = driver.FindElementById("login-username");
             userName.SendKeys("stephcshea");
             var loginButton = driver.FindElementById("login-signin");
-            loginButton.Click();
+            loginButton.Click(); 
 
-    (SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("login-passwd")));       
+// driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(120);   
+// driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+        wait.Until(loc => loc.FindElement(By.Id("login-passwd")));
 
-var userPassword = driver.FindElementById("login-passwd");
-userPassword.SendKeys("Abby7777!");
-var loginButton2 = driver.FindElementById("login-signin");
-loginButton2.Click();
+        var userPassword = driver.FindElementById("login-passwd");  
+        userPassword.SendKeys("Abby7777!");
+        var loginButton2 = driver.FindElementById("login-signin");
+        loginButton2.Click();
 
-//redirect
+        // driver.Url = "https://finance.yahoo.com/portfolio/p_1/view/v1";
+// driver.Navigate().GoToUrl("https://finance.yahoo.com/portfolio/p_0/view/v1");
+//         wait.Until(loc => loc.FindElement(By.Id("__dialog")));
 
-// FirefoxDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(120);
-
-// FirefoxDriver.Navigate().GoToUrl("https://finance.yahoo.com/portfolio/p_1/view/v2");
-
-// var popup = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("__dialog")));  
-
-// var closePopup = FirefoxDriver.FindElementByXPath("//dialog[@id = '__dialog']/section/button");
+// var closePopup =(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("__dialog")));
+// var closePopup = driver.FindElement(By.XPath("//dialog[@id = '__dialog']/section/button"));
 // closePopup.Click(); 
 
 
-// var profile = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("main")));
-
-// var profileTable = FirefoxDriver.FindElement(By.XPath("//*[@id=\"main\"]/section/header/div/div[2]/div/div[3]/section/section[2]/div/div[2]")).Text;
-
-// System.Console.WriteLine("profileTable: ", profileTable);  
+// driver.Quit();
         }
     }
 }

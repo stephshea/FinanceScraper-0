@@ -1,0 +1,11 @@
+/Users/owner/Projects/FinanceScraper-0/obj/Debug/netcoreapp2.0/FinanceScraper0.csprojAssemblyReference.cache
+/Users/owner/Projects/FinanceScraper-0/obj/Debug/netcoreapp2.0/FinanceScraper0.csproj.CoreCompileInputs.cache
+/Users/owner/Projects/FinanceScraper-0/obj/Debug/netcoreapp2.0/FinanceScraper0.AssemblyInfoInputs.cache
+/Users/owner/Projects/FinanceScraper-0/obj/Debug/netcoreapp2.0/FinanceScraper0.AssemblyInfo.cs
+/Users/owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.0/FinanceScraper0.deps.json
+/Users/owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.0/FinanceScraper0.runtimeconfig.json
+/Users/owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.0/FinanceScraper0.runtimeconfig.dev.json
+/Users/owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.0/FinanceScraper0.dll
+/Users/owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.0/FinanceScraper0.pdb
+/Users/owner/Projects/FinanceScraper-0/obj/Debug/netcoreapp2.0/FinanceScraper0.dll
+/Users/owner/Projects/FinanceScraper-0/obj/Debug/netcoreapp2.0/FinanceScraper0.pdb
