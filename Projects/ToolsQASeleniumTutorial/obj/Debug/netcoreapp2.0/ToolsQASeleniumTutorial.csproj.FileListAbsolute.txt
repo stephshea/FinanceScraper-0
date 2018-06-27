@@ -1,0 +1,11 @@
+/Users/owner/Projects/ToolsQASeleniumTutorial/bin/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.deps.json
+/Users/owner/Projects/ToolsQASeleniumTutorial/bin/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.runtimeconfig.json
+/Users/owner/Projects/ToolsQASeleniumTutorial/bin/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.runtimeconfig.dev.json
+/Users/owner/Projects/ToolsQASeleniumTutorial/bin/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.dll
+/Users/owner/Projects/ToolsQASeleniumTutorial/bin/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.pdb
+/Users/owner/Projects/ToolsQASeleniumTutorial/obj/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.csprojAssemblyReference.cache
+/Users/owner/Projects/ToolsQASeleniumTutorial/obj/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.csproj.CoreCompileInputs.cache
+/Users/owner/Projects/ToolsQASeleniumTutorial/obj/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.AssemblyInfoInputs.cache
+/Users/owner/Projects/ToolsQASeleniumTutorial/obj/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.AssemblyInfo.cs
+/Users/owner/Projects/ToolsQASeleniumTutorial/obj/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.dll
+/Users/owner/Projects/ToolsQASeleniumTutorial/obj/Debug/netcoreapp2.0/ToolsQASeleniumTutorial.pdb

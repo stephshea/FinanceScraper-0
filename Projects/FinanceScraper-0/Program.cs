@@ -15,10 +15,10 @@ using OpenQA.Selenium.Support.UI;
 namespace FinanceScraper0 {
     class MainClass {
         public static void Main (string[] args) {
-            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService ("/Users/Owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.1/");
+            FirefoxDriverService service = FirefoxDriverService.CreateDefaultService ("/Users/Owner/Projects/FinanceScraper-0/bin/Debug/netcoreapp2.0/");
 
             var driver = new FirefoxDriver ();
-            var wait = new WebDriverWait (driver, TimeSpan.FromSeconds (10));
+            var wait = new WebDriverWait (driver, TimeSpan.FromSeconds (60));
 
             driver.Url = "https://login.yahoo.com/config/login?.intl=us&.lang=en-US&.src=finance&.done=https%3A%2F%2Fßfinance.yahoo.com%2F";
 
@@ -39,6 +39,15 @@ namespace FinanceScraper0 {
 
             var closePopup = driver.FindElement (By.XPath ("/html/body/dialog/section/button"));
             closePopup.Click ();
+
+            // wait.Until (loc => loc.FindElement (By.Id ("main")));
+
+            // var profileTable = driver.FindElement(By.XPath("//*
+            
+            // [@id=\"main\"]/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody")).Text;
+ 
+            var profileTable;
+            System.Console.WriteLine("profileTable: ", profileTable);  
         }
     }
 }
