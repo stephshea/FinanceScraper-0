@@ -40,14 +40,26 @@ namespace FinanceScraper0 {
             var closePopup = driver.FindElement (By.XPath ("/html/body/dialog/section/button"));
             closePopup.Click ();
 
-            // wait.Until (loc => loc.FindElement (By.Id ("main")));
+            wait.Until (loc => loc.FindElement (By.Id ("main")));
 
-            // var profileTable = driver.FindElement(By.XPath("//*
-            
-            // [@id=\"main\"]/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody")).Text;
- 
-            var profileTable;
-            System.Console.WriteLine("profileTable: ", profileTable);  
+            // var stockSymbol = driver.FindElement(By.XPath(/html/body/div[2]/div[3]/section/section[2]/div[2]/table/tbody/tr[1]/td[1]));
+
+            // var symbols = driver.FindElement(By.ClassName("_1_2Qy"));
+
+            IList<IWebElement> symbols =  driver.FindElements(By.ClassName("_1_2Qy"));
+
+
+
+            foreach (var item in symbols)
+            {
+                Console.WriteLine(item.Text);
+            } 
+            // var profileTable = driver.FindElement(By.XPath("/html/body/div[2]/div[3]/section/section[2]/div[2]"));
+
+
+// /html/body/div[2]/div[3]/section/section[2]/div[2]/table"
+            // // string profileTable = "hello";
+            // System.Console.WriteLine("profileTable: ", profileTable);  
         }
     }
 }
